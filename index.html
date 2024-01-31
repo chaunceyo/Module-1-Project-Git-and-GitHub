@@ -1,0 +1,146 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Steph</title>
+  <style>
+    h2 {
+      font-style: italic
+    }
+    body {
+      padding: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 style="background-color:DodgerBlue;"> Stephen Curry</h1>
+
+    <nav>
+      <a href="#Recent News">Recent News</a> |
+      <a href="#Who is Stephen Curry?">Who is Stephen Curry?</a> |
+      <a href="#Accomplishments">Accomplishments</a> |
+      <a href="#Player Profile">Player Profile</a> |
+      <a href="#Sign up">Sign up</a>
+    </nav>
+  </header>
+
+  <section id="Recent News">
+    <h2 style="background-color:DodgerBlue;">Recent News</h2>
+
+    <p>•Curry finished Saturday's 145-144 double-overtime loss to the Lakers with 46 points (17-35 FG, 9-21 3Pt, 3-3
+      FT), three rebounds, seven assists and one steal in 43 minutes. 1 DAY AGO
+      <br><br> •In an epic clash with LeBron James, a season-high point total from Curry wasn't quite enough. The
+      two-time MVP has drained at least three three-pointers in six straight games and 10 of his last 11, averaging 27.1
+      points, 6.3 assists, 4.6 treys, 3.4 boards and 1.2 steals over that stretch.
+      1 DAY AGO<br>
+    </p>
+  </section>
+
+  <section id="Who Is Stephen Curry?">
+    <h2 style="background-color:DodgerBlue;">Who is Stephen Curry?</h1>
+
+      <aside>
+        <img src="https://www.basketball-reference.com/req/202106291/images/headshots/curryst01.jpg"
+          alt="Stephen Curry">
+      </aside>
+
+
+      <p>Stephen Curry (born March 14, 1988, Akron, Ohio, U.S.) American professional basketball player who led the
+        Golden
+        State Warriors of the National Basketball Association (NBA) to championships in 2014–15, 2016–17, 2017–18, and
+        2021–22 and to the best regular-season record in league history (73–9) in 2015–16.</p>
+  </section>
+
+  <section id="Accomplishments">
+    <h2 style="background-color:DodgerBlue;">Accomplishments</h2>
+
+    <ul>
+       <li>9x All Star</li><br>
+      <li>4× NBA champion: 2015, 2017, 2018, 2022 </li><br>
+      <li>NBA Finals MVP: 2022 </li> <br>
+      <li>2× NBA Most Valuable Player: 2015, 2016 </li><br>
+      <li>The only unanimous MVP selection in league history (2016) </li> <br>
+      <li>9× NBA All-Star: 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023 </li><br>
+      <li>NBA All-Star Game MVP: 2022 </li><br>
+      <li>NBA Western Conference Finals MVP: 2022 </li><br>
+      <li>9× All-NBA selection: </li><br>
+      <li>4× First team: 2015, 2016, 2019, 2021 </li><br>
+      <li>4× Second team: 2014, 2017, 2022, 2023 </li><br>
+      <li>Third team: 2018 </li><br>
+      <li>NBA All-Rookie First Team: 2010 </li><br>
+      <li>13× NBA Player of the Month </li> <br>
+      <li>20× NBA Player of the Week </li><br>
+      <li>2× NBA scoring leader: 2016, 2021 </li><br>
+      <li>2× NBA Three-Point Contest champion: 2015, 2021 </li><br>
+      <li>NBA steals leader: 2016 </li><br>
+      <li>7× NBA three-point field goals leader: 2013, 2014, 2015, 2016, 2017, 2021, 2022</li><br>
+      <li>4× NBA free-throw percentage leader: 2011, 2015, 2016, 2018</li></ul>
+  </section>
+
+  <section id="Player Profile">
+    <h2 style="background-color:DodgerBlue;">Player Profile</h2>
+
+    <p>Full Name:
+      Wardell Stephen Curry II <br>
+      Team: Golden State Warriors <br>
+      Position: Point Guard <br>
+      Jersey Number: 30 (Warriors) <br>
+      Height: 6'3 <br>
+      Weight: 190 lbs <br>
+      Born: March 14, 1988 in Akron, Ohio, USA <br>
+      High-School: Charlotte Christian in Charlotte, North Carolina <br>
+      College: Davidson College <br>
+      Drafted: by the Golden State Warriors with No. 7 overall pick in round 1 of the 2009 NBA Draft</p>
+  </section>
+
+  <section id="Sign up">
+    <footer>
+    <form>
+      <h3 style="background-color:DodgerBlue;">Sign up for text updates on history's greatest shooter!</h3>
+      <label for="fname">Phone Number:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Email:</label><br>
+      <input type="text" id="lname" name="lname"><br>
+      <input type="submit" value="Sign Me Up!">
+    </form>
+  </footer>
+  </section>
+</body>
+
+</html>
